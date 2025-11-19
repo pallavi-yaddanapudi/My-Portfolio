@@ -52,7 +52,7 @@ const Home = () => {
                 className="glass glass-hover"
                 asChild
               >
-                <a href="#" download>
+                <a href="/Yaddanapudi_Pallavi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
                   <Download className="mr-2 w-4 h-4" />
                   Download Resume
                 </a>
@@ -60,25 +60,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Floating Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
-            {[
-              { number: "3+", label: "Years Learning" },
-              { number: "5+", label: "Projects Built" },
-              { number: "10+", label: "Technologies" },
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="glass glass-hover rounded-2xl p-8 text-center"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <h3 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-                  {stat.number}
-                </h3>
-                <p className="text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </main>
     </div>

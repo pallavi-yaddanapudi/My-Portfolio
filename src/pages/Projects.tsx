@@ -22,6 +22,23 @@ const Projects = () => {
       githubLink: "#",
       image: "/placeholder.svg",
     },
+    {
+      title: "Wanderlust",
+      subtitle: "Travel Accommodation Platform",
+      description: "A full-stack travel accommodation platform enabling users to explore, book and review stays with integrated map support.",
+      features: [
+        "RESTful APIs and modular backend architecture",
+        "Robust data management with MongoDB",
+        "Responsive Bootstrap components",
+        "Client-side validation",
+        "Dynamic content rendering",
+        "Integrated map support",
+      ],
+      tech: ["Node.js", "Express", "MongoDB", "Bootstrap", "JavaScript"],
+      liveLink: "https://wanderlust-6mf3.onrender.com/listings",
+      githubLink: "#",
+      image: "/placeholder.svg",
+    },
   ];
 
   return (
@@ -122,13 +139,6 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* More Projects Coming Soon */}
-          <div className="glass rounded-2xl p-12 text-center space-y-4">
-            <h3 className="text-2xl font-bold">More Projects Coming Soon</h3>
-            <p className="text-muted-foreground">
-              I'm constantly working on new projects. Check back soon for updates!
-            </p>
-          </div>
         </div>
       </main>
     </div>
