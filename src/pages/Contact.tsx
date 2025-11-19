@@ -7,20 +7,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "yaddanapudipallavi@example.com",
-      href: "mailto:yaddanapudipallavi@example.com",
+      value: "yaddanapudipallavi101@gmail.com",
+      href: "yaddanapudipallavi101@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/yaddanapudipallavi",
-      href: "https://linkedin.com/in/yaddanapudipallavi",
+      value: "https://www.linkedin.com/in/pallavi-yaddanapudi-b83914268/",
+      href: "https://www.linkedin.com/in/pallavi-yaddanapudi-b83914268/",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/yaddanapudipallavi",
-      href: "https://github.com/yaddanapudipallavi",
+      value: "https://github.com/pallavi-yaddanapudi",
+      href: "https://github.com/pallavi-yaddanapudi",
     },
   ];
 
@@ -36,7 +36,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                       <span className="text-sm font-medium">Available for opportunities</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      Open to full-time roles, internships, and freelance projects
+                      Open to full-time roles, internships and freelance projects
                     </p>
                   </div>
                 </CardContent>

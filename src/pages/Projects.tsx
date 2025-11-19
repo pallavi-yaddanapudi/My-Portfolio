@@ -19,8 +19,8 @@ const Projects = () => {
       ],
       tech: ["React", "Tailwind CSS", "RTK Query", "Node.js", "Express", "MongoDB"],
       liveLink: "https://learnify-five-pied.vercel.app/",
-      githubLink: "#",
-      image: "/placeholder.svg",
+      githubLink: "https://github.com/pallavi-yaddanapudi/Learnify",
+      image: "/lms.jpg",
     },
     {
       title: "Wanderlust",
@@ -36,8 +36,8 @@ const Projects = () => {
       ],
       tech: ["Node.js", "Express", "MongoDB", "Bootstrap", "JavaScript"],
       liveLink: "https://wanderlust-6mf3.onrender.com/listings",
-      githubLink: "#",
-      image: "/placeholder.svg",
+      githubLink: "https://github.com/pallavi-yaddanapudi/AirnbProject",
+      image: "/lms2.png",
     },
   ];
 
@@ -74,7 +74,7 @@ const Projects = () => {
                       alt={project.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                   
                   </div>
 
                   {/* Project Details */}

@@ -15,14 +15,14 @@ const Resume = () => {
               Resume
             </h1>
             <p className="text-lg text-muted-foreground">
-              Full-Stack Developer | MERN | Java | Python
+              Full-Stack Developer | MERN | Java 
             </p>
             <Button 
               size="lg" 
               className="shadow-elegant hover:shadow-glow transition-all"
               asChild
             >
-              <a href="/Yaddanapudi_Pallavi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
+              <a href="/Pallavi_Yaddanapudi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
                 <Download className="mr-2 w-4 h-4" />
                 Download PDF
               </a>

@@ -15,7 +15,7 @@ const Home = () => {
             <div className="glass rounded-full p-2 shadow-glow">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20">
                 <img
-                  src="/placeholder.svg"
+                  src="/R200758.jpg"
                   alt="Yaddanapudi Pallavi"
                   className="w-full h-full object-cover"
                 />
@@ -52,7 +52,7 @@ const Home = () => {
                 className="glass glass-hover"
                 asChild
               >
-                <a href="/Yaddanapudi_Pallavi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
+                <a href="/Pallavi_Yaddanapudi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
                   <Download className="mr-2 w-4 h-4" />
                   Download Resume
                 </a>

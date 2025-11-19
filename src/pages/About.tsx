@@ -62,7 +62,7 @@ const About = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               I am an enthusiastic Computer Science student specializing in MERN full-stack development, 
-              Java, Python, and scalable web application design. I enjoy solving complex problems and 
+              Java, Python and scalable web application design. I enjoy solving complex problems and 
               continuously improving my technical abilities.
             </p>
           </div>
