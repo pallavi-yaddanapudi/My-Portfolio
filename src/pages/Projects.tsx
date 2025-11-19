@@ -102,7 +102,7 @@ const Projects = () => {
                         <h4 className="font-semibold">Tech Stack:</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.tech.map((tech, i) => (
-                            <Badge key={i} variant="secondary" className="glass">
+                            <Badge key={i} variant="secondary">
                               {tech}
                             </Badge>
                           ))}
