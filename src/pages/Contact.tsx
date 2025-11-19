@@ -1,9 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -43,59 +40,8 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Form */}
-            <Card className="glass border-glass">
-              <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
-                      className="glass border-glass"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@example.com"
-                      className="glass border-glass"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Message
-                    </label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Your message..."
-                      rows={5}
-                      className="glass border-glass"
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full shadow-elegant hover:shadow-glow transition-all">
-                    <Send className="mr-2 w-4 h-4" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            {/* Social Links */}
-            <div className="space-y-6">
+          {/* Social Links */}
+          <div className="max-w-2xl mx-auto space-y-6">
               <Card className="glass border-glass">
                 <CardHeader>
                   <CardTitle>Connect With Me</CardTitle>
@@ -140,7 +86,6 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
           </div>
         </div>
       </main>
