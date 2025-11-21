@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "Learnify",
       subtitle: "Learning Management System",
-      description: "A comprehensive MERN stack Learning Management System with role-based authentication, course management, enrollment tracking, and integrated Stripe payment processing.",
+      description: "A comprehensive MERN stack Learning Management System with role-based authentication, course management, enrollment tracking and integrated Stripe payment processing.",
       features: [
         "Role-based login system",
         "Course creation and management",
@@ -54,7 +54,7 @@ const Projects = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               A collection of projects showcasing my skills in full-stack development, 
-              UI/UX design, and problem-solving.
+              UI/UX design and problem-solving.
             </p>
           </div>
 
