@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <main className="container mx-auto px-4 pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image */}
@@ -28,38 +28,45 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Yaddanapudi Pallavi
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Full-Stack Developer (MERN) | Java | Python
+              Full-Stack Developer | Java | DSA
             </p>
-            
+
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-              Building scalable apps & solving real-world problems through code.
+              Building full-stack web applications with MongoDB, Express, React
+              and Node.js. Strong foundation in Data Structures & Algorithms
+              with Java.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Link to="/projects">
-                <Button size="lg" className="group shadow-elegant hover:shadow-glow transition-all">
+                <Button
+                  size="lg"
+                  className="group shadow-elegant hover:shadow-glow transition-all"
+                >
                   View Projects
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
+
+              <Button
+                size="lg"
+                variant="outline"
                 className="glass glass-hover"
                 asChild
               >
-                <a href="/Pallavi_Yaddanapudi_Resume.pdf" download="Yaddanapudi_Pallavi_Resume.pdf">
+                <a
+                  href="/Pallavi_Yaddanapudi_Resume.pdf"
+                  download="Yaddanapudi_Pallavi_Resume.pdf"
+                >
                   <Download className="mr-2 w-4 h-4" />
                   Download Resume
                 </a>
               </Button>
             </div>
           </div>
-
         </div>
       </main>
     </div>

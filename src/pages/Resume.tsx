@@ -15,7 +15,7 @@ const Resume = () => {
               Resume
             </h1>
             <p className="text-lg text-muted-foreground">
-              Full-Stack Developer | MERN | Java 
+              Full-Stack Developer | Java | DSA
             </p>
             <Button 
               size="lg" 
