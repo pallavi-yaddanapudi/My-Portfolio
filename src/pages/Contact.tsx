@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Code2, BookOpen } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -8,19 +8,31 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       value: "yaddanapudipallavi101@gmail.com",
-      href: "yaddanapudipallavi101@gmail.com",
+      href: "mailto:yaddanapudipallavi101@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "https://www.linkedin.com/in/pallavi-yaddanapudi-b83914268/",
+      value: "linkedin.com/in/pallavi-yaddanapudi-b83914268",
       href: "https://www.linkedin.com/in/pallavi-yaddanapudi-b83914268/",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "https://github.com/pallavi-yaddanapudi",
+      value: "github.com/pallavi-yaddanapudi",
       href: "https://github.com/pallavi-yaddanapudi",
+    },
+    {
+      icon: Code2,
+      label: "LeetCode",
+      value: "leetcode.com/pallavi-yaddanapudi",
+      href: "https://leetcode.com/pallavi-yaddanapudi",
+    },
+    {
+      icon: BookOpen,
+      label: "GeeksforGeeks",
+      value: "geeksforgeeks.org/user/pallavi-yaddanapudi",
+      href: "https://auth.geeksforgeeks.org/user/pallavi-yaddanapudi",
     },
   ];
 
