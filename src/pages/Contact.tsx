@@ -26,15 +26,13 @@ const Contact = () => {
       icon: Code2,
       label: "LeetCode",
       value: "leetcode.com/pallavi-yaddanapudi",
-      href: "https://leetcode.com/pallavi-yaddanapudi",
-     
+      href: "https://leetcode.com/u/Yaddanapudi_Pallavi/",
     },
     {
       icon: BookOpen,
       label: "GeeksforGeeks",
       value: "geeksforgeeks.org/user/pallavi-yaddanapudi",
       href: "https://auth.geeksforgeeks.org/user/pallavi-yaddanapudi",
-      
     },
   ];
 
