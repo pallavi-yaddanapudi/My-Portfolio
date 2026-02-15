@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +15,8 @@ const Projects = () => {
     {
       title: "Learnify",
       subtitle: "Learning Management System",
-      description: "A comprehensive MERN stack Learning Management System with role-based authentication, course management, enrollment tracking and integrated Stripe payment processing.",
+      description:
+        "A comprehensive MERN stack Learning Management System with role-based authentication, course management, enrollment tracking and integrated Stripe payment processing.",
       features: [
         "Role-based login system",
         "Course creation and management",
@@ -17,7 +24,14 @@ const Projects = () => {
         "Stripe payment integration",
         "Responsive UI design",
       ],
-      tech: ["React", "Tailwind CSS", "RTK Query", "Node.js", "Express", "MongoDB"],
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "RTK Query",
+        "Node.js",
+        "Express",
+        "MongoDB",
+      ],
       liveLink: "https://learnify-five-pied.vercel.app/",
       githubLink: "https://github.com/pallavi-yaddanapudi/Learnify",
       image: "/lms.jpg",
@@ -25,7 +39,8 @@ const Projects = () => {
     {
       title: "Wanderlust",
       subtitle: "Travel Accommodation Platform",
-      description: "A full-stack travel accommodation platform enabling users to explore, book and review stays with integrated map support.",
+      description:
+        "A full-stack travel accommodation platform enabling users to explore, book and review stays with integrated map support.",
       features: [
         "RESTful APIs and modular backend architecture",
         "Robust data management with MongoDB",
@@ -39,12 +54,40 @@ const Projects = () => {
       githubLink: "https://github.com/pallavi-yaddanapudi/AirnbProject",
       image: "/lms2.png",
     },
+    {
+      title: "SERVD",
+      subtitle: "AI Recipe Assistant Platform",
+      description:
+        "An AI-powered recipe platform that generates personalized recipes from pantry items or ingredient images, with nutrition insights and plan-based AI usage.",
+      features: [
+        "AI recipe generation using Gemini",
+        "Pantry item based recipe suggestions",
+        "Ingredient image scanning for recipe detection",
+        "Recipe of the day recommendations",
+        "Cuisine & category exploration dashboard",
+        "Downloadable recipe files with nutrition details",
+        "Free and Pro membership usage limits",
+        "Secure authentication with Clerk",
+      ],
+      tech: [
+        "Next.js",
+        "Prisma",
+        "Neon DB",
+        "Strapi",
+        "Gemini AI",
+        "Arcjet",
+        "Clerk",
+      ],
+      liveLink: "https://servd-xi.vercel.app",
+      githubLink: "https://github.com/pallavi-yaddanapudi/Servd",
+      image: "/servd2.png",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <main className="container mx-auto px-4 pt-32 pb-20">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
@@ -53,16 +96,16 @@ const Projects = () => {
               My Projects
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A collection of projects showcasing my skills in full-stack development, 
-              UI/UX design and problem-solving.
+              A collection of projects showcasing my skills in full-stack
+              development, UI/UX design and problem-solving.
             </p>
           </div>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 gap-8">
             {projects.map((project, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="glass glass-hover border-glass overflow-hidden animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -74,18 +117,23 @@ const Projects = () => {
                       alt={project.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
-                   
                   </div>
 
                   {/* Project Details */}
                   <div className="p-6 space-y-4">
                     <CardHeader className="p-0">
-                      <CardTitle className="text-3xl">{project.title}</CardTitle>
-                      <CardDescription className="text-lg">{project.subtitle}</CardDescription>
+                      <CardTitle className="text-3xl">
+                        {project.title}
+                      </CardTitle>
+                      <CardDescription className="text-lg">
+                        {project.subtitle}
+                      </CardDescription>
                     </CardHeader>
 
                     <CardContent className="p-0 space-y-4">
-                      <p className="text-muted-foreground">{project.description}</p>
+                      <p className="text-muted-foreground">
+                        {project.description}
+                      </p>
 
                       {/* Features */}
                       <div className="space-y-2">
@@ -111,22 +159,30 @@ const Projects = () => {
 
                       {/* Action Buttons */}
                       <div className="flex gap-3 pt-4">
-                        <Button 
-                          asChild 
+                        <Button
+                          asChild
                           className="shadow-elegant hover:shadow-glow transition-all"
                         >
-                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="mr-2 w-4 h-4" />
                             Live Demo
                           </a>
                         </Button>
-                        
-                        <Button 
-                          variant="outline" 
+
+                        <Button
+                          variant="outline"
                           asChild
                           className="glass glass-hover"
                         >
-                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Github className="mr-2 w-4 h-4" />
                             View Code
                           </a>
@@ -138,7 +194,6 @@ const Projects = () => {
               </Card>
             ))}
           </div>
-
         </div>
       </main>
     </div>
